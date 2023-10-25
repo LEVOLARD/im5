@@ -1,16 +1,118 @@
 *{
     font-family: 'Montserrat';
+    box-sizing: border-box;
 }
-html, body{
+
+html, body, section{
     padding: 0;
     margin: 0;
 }
+
 body{
-
+    background-color: rgba(24, 115, 98, 0.082);
+    padding-top: 150px;
 }
+
 header{
-
+    width: 95%;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
-header section{
 
+header section{ 
+    display: inline-block;
+    padding: 20px 40px;
+}
+
+header section img{
+    display: inline;
+    height: 100%;
+}
+
+.nav-le{
+    width: 30%;
+}
+.nav-ri{
+    width: 70%;
+    display: flex;
+    align-items:center;
+    justify-content: end;
+    padding-right: 0;
+}
+
+header .nav-ri a{
+    color: rgba(24, 115, 98, 1);
+    padding: 30px 40px;
+    font-weight: bolder;
+}
+
+.mainlink-3{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header .nav-ri a:hover{
+    background-color: rgba(24, 115, 98, 1);
+    color: white;
+}
+
+.nav-ri{
+    text-align: right;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+}
+
+.side-nav{
+    display: none;
+}
+
+main{
+    width: 95%;
+    height: 500px;
+    background-color: green;
+    margin: 0 auto;
+}
+
+
+
+@media (max-width: 1000px){
+    header{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    header{
+        margin-top: 15px;
+    }
+    
+    .main-nav{
+        display: none;
+    }
+    .side-nav{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 600px){
+    header .nav-ri a{
+        padding: 30px 20px;
+    }
 }
