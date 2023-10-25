@@ -8,7 +8,7 @@
     <meta name="author" content="author" />
     <meta name="keywords" content="keywords" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/vnd.microsoft.icon" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat"  type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a52278eccd.js" crossorigin="anonymous"></script>
@@ -34,7 +34,20 @@
         </section>
     </header>
     <main>
-      <h1>Test</h1>
+      <section class="col-50" id="bg"></section>
+      <aside class="col-50" id="ff">
+        <h3>Forschungsfrage</h3>
+        <h1>«Inwiefern tragen die Interaktionen zwischen Unternehmen dazu bei, die Markenglaubwürdigkeit auf TikTok zu stärken und das Vertrauen der Zielgruppe zu gewinnen?»</h1>
+      </aside>
+        <section id="image-container">
+          <div id="image-slider">
+              <img class="image" src="img/stock1.jpeg" alt="Bild 1">
+              <img class="image" src="img/stock2.jpeg" alt="Bild 2">
+              <img class="image" src="img/stock3.jpeg" alt="Bild 3">
+          </div>
+          <div id="prevBtn" onclick="prevImage()"><i class="fa-solid fa-angle-left"></i></div>
+          <div id="nextBtn" onclick="nextImage()"><i class="fa-solid fa-angle-right"></i></div>
+      </section>
     </main>
     <script type="text/javascript" src="javascript/script.js"></script>
   </body>
