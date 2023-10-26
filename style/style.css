@@ -92,8 +92,8 @@ main{
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap;
-    padding-bottom: 300px;
 }
+
 .col-50{
     width: calc(50% - 20px);
     min-height: 300px;
@@ -111,11 +111,6 @@ main{
     transition: 0.3s;
 }
 
-#bg:hover{
-    box-shadow: 0px 7px 27px -15px rgba(0,0,0,0.4);
-    cursor: pointer;
-
-}
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
@@ -180,12 +175,12 @@ h3{
 }
 
 .vid{
-    width: 100%;
+    width: calc(75% - 20px);
     border-radius: 30px;
 }
 
-.vid h3{
-    margin: 15px 0;
+.vid-iframe:hover{
+    box-shadow: 0px 7px 27px -15px rgba(0,0,0,0.4);
 }
 
 .vid-iframe{
@@ -193,6 +188,87 @@ h3{
     width: 100%;
     border-radius: 30px;
     border: 0;
+}
+
+.vid-dec{
+    width: calc(25% - 20px);
+    background: white;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.vid-dec h3{
+    margin: 0 0 15px 0;
+}
+
+.col-25{
+    width: calc(25% - 30px);
+    background: white;
+    border-radius: 30px;
+    min-height: 150px;
+    padding: 3%;
+}
+
+#col-25-img{
+    background-image: url(../img/stock4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s;
+}
+
+.col-25 i{
+    margin-bottom: 15px;
+}
+
+.col-25 p{
+    margin: 15px 0;
+}
+
+.read-more{
+    border: 0;
+    padding: 10px;
+    background-color: rgba(24, 115, 98, 1);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(24, 115, 98, 1)
+}
+
+.read-more:hover{
+    cursor: pointer;
+    color:rgba(24, 115, 98, 1);
+    background: white;
+    border: 1px solid rgba(24, 115, 98, 1)
+}
+
+footer{
+    background: white;
+    bottom: 0;
+    width: 80%;
+    min-height: 150px;
+    border-radius: 30px 30px 0 0;
+    margin: 80px auto 0 auto;
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo, footer img{
+    width: 20%;
+    min-width: 200px;
+}
+
+.socials{
+    font-size: 30px;
+}
+
+.socials a:hover{
+    color: black;
+}
+
+.socials a{
+    text-decoration: none;
+    padding: 10px;
+    color:rgba(24, 115, 98, 1); 
 }
 
 /* RESPONSIVE */
@@ -225,6 +301,17 @@ h3{
 
     #ff{
         width: calc(66% - 15px);
+    }
+    .vid{
+        width: 100%;
+    }
+    .vid-dec{
+        width: 100%;
+    }
+    
+    .col-25{
+        width: calc(50% - 20px);
+        padding: 5%;
     }
 }
 
@@ -276,6 +363,11 @@ h3{
     main{
         flex-direction: column;
     }
+    .col-25{
+        width: 100%;
+        padding: 10%;
+    }
+   
 }
 
 @media (max-width: 600px){
@@ -298,5 +390,9 @@ h3{
 
     h1{
         font-size: 25px;
+    }
+
+    .logo, footer img{
+        min-width: 150px;
     }
 }
