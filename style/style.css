@@ -271,6 +271,12 @@ footer{
     color:rgba(24, 115, 98, 1); 
 }
 
+.col-75{
+    width: calc(75% - 20px);
+    background-color: white;
+    border-radius: 30px;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1400px){
