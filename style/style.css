@@ -201,14 +201,6 @@ h3{
     margin: 0 0 15px 0;
 }
 
-.col-25{
-    width: calc(25% - 30px);
-    background: white;
-    border-radius: 30px;
-    min-height: 150px;
-    padding: 3%;
-}
-
 #col-25-img{
     background-image: url(../img/stock4.jpeg);
     background-repeat: no-repeat;
@@ -271,10 +263,41 @@ footer{
     color:rgba(24, 115, 98, 1); 
 }
 
+.col-25{
+    width: calc(25% - 30px);
+    background: white;
+    border-radius: 30px;
+    min-height: 150px;
+    padding: 3%;
+}
+
 .col-75{
     width: calc(75% - 20px);
     background-color: white;
     border-radius: 30px;
+}
+
+.col-100{
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 4%;
+}
+
+.tt-container{
+    aspect-ratio: 9 / 11;
+    width: 33%;
+    overflow: hidden;
+    display: inline-block;
+    padding-top: -18px;
+}
+
+.tiktok-embed{
+    margin-top: 0 !important;
+}
+
+.tiktok-embed iframe{
+    display: inline-block;
 }
 
 /* RESPONSIVE */
