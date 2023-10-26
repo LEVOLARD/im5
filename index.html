@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/a52278eccd.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!--HEADER-->
     <header>
         <section class="nav-le">
             <a href="#">
@@ -33,20 +34,29 @@
           </nav>
         </section>
     </header>
+
     <main>
-      <section class="col-50" id="bg"></section>
-      <aside class="col-50" id="ff">
+      <!--MAIN IMAGE-->
+      <section class="col-50 container" id="bg"></section>
+      <!--FORSCHUNGSFRAGE-->
+      <section class="col-50 container" id="ff">
         <h3>Forschungsfrage</h3>
         <h1>«Inwiefern tragen die Interaktionen zwischen Unternehmen dazu bei, die Markenglaubwürdigkeit auf TikTok zu stärken und das Vertrauen der Zielgruppe zu gewinnen?»</h1>
-      </aside>
-        <section id="image-container">
-          <div id="image-slider">
-              <img class="image" src="img/stock1.jpeg" alt="Bild 1">
-              <img class="image" src="img/stock2.jpeg" alt="Bild 2">
-              <img class="image" src="img/stock3.jpeg" alt="Bild 3">
-          </div>
-          <div id="prevBtn" onclick="prevImage()"><i class="fa-solid fa-angle-left"></i></div>
-          <div id="nextBtn" onclick="nextImage()"><i class="fa-solid fa-angle-right"></i></div>
+      </section>
+      <!--IMAGES-->
+      <section id="image-container" class="container">
+        <div id="image-slider">
+          <img class="image" src="img/stock1.jpeg" alt="Bild 1">
+          <img class="image" src="img/stock2.jpeg" alt="Bild 2">
+          <img class="image" src="img/stock3.jpeg" alt="Bild 3">
+        </div>
+        <div id="prevBtn" onclick="prevImage()"><i class="fa-solid fa-angle-left"></i></div>
+        <div id="nextBtn" onclick="nextImage()"><i class="fa-solid fa-angle-right"></i></div>
+      </section>
+      <!--INSPIRATION-->
+      <section class="vid">
+        <h3>Inspiration</h3>
+        <iframe class="vid-iframe" src="https://www.youtube-nocookie.com/embed/NZrJ142n6Qw?si=9OJ5dwot-T0b4LyL?rel=0" allowfullscreen></iframe>
       </section>
     </main>
     <script type="text/javascript" src="javascript/script.js"></script>
