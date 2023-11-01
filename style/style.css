@@ -1,6 +1,7 @@
 *{
     font-family: 'Montserrat';
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 :root{
@@ -33,7 +34,6 @@ header{
     transform: translateX(-50%);
     box-shadow: 0px 7px 27px -15px rgba(0,0,0,0.4);
     z-index: 300;
-
 }
 
 header section{ 
@@ -264,7 +264,6 @@ footer{
 }
 
 .socials a{
-    text-decoration: none;
     padding: 10px;
     color:rgba(24, 115, 98, 1); 
 }
@@ -333,10 +332,8 @@ footer{
 
 .tiktok-embed iframe{
     display: inline-block;
-    
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: var(--green);
     color: white;
@@ -353,12 +350,10 @@ footer{
     font-weight: 500;
 }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
     background-color: #535353;
   }
   
-  /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 10px 30px;
     background-color: var(--dark);
