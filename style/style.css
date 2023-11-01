@@ -23,7 +23,7 @@ header{
     width: 80%;
     margin-top: 50px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 30px;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -64,8 +64,8 @@ header .nav-ri a{
 }
 
 .mainlink-3{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 header .nav-ri a:hover{
@@ -277,6 +277,13 @@ footer{
     padding: 3%;
 }
 
+.col-33{
+    width: calc(33% - 20px);
+    padding: 4%;
+    background: white;
+    border-radius: 30px;
+}
+
 .col-75{
     width: calc(75% - 20px);
     background-color: white;
@@ -309,6 +316,7 @@ footer{
 
 .example h3{
     padding: 0 0 20px 20px;
+    color: var(--green);
 }
 
 .tt-container{
@@ -326,6 +334,43 @@ footer{
 .tiktok-embed iframe{
     display: inline-block;
     
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: var(--green);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    margin: 0 0 20px 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 20px 20px 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #535353;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 10px 30px;
+    background-color: var(--dark);
+    display: none;
+    overflow: hidden;
+    margin: -20px 0 20px 0;
+    border-radius: 20px 0 20px 20px;
+    font-size: 19px;
+  }
+
+#vid-66{
+    width: calc(66% - 20px);
 }
 
 /* RESPONSIVE */
