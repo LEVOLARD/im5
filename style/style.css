@@ -409,11 +409,6 @@ footer{
 
 /* RESPONSIVE */
 
-@media (min-width: 2000px){
-    .fill, header, main, footer{
-        width: 1250px;
-    }
-}
 
 @media (max-width: 1400px){
     h1{
@@ -618,4 +613,10 @@ footer{
         padding-left: 10%;
     }
 
+}
+
+@media (min-width: 2000px){
+    .fill, header, main, footer{
+        width: 1250px;
+    }
 }
